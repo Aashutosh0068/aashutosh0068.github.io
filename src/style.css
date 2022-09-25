@@ -16,15 +16,15 @@ body {
   font-weight: 400;
   color: var(--black-color);
 }
-.title{
+.title {
   display: none;
 }
 @media only screen and (max-width: 600px) {
-  @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+  @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
   body {
     background-color: var(--background-color);
   }
-  .title{
+  .title {
     background-color: var(--black-color);
     padding: 10px;
     padding-top: 14px;
@@ -36,21 +36,21 @@ body {
     border-bottom-right-radius: 6px;
     margin-bottom: 10px;
   }
-  .title ul{
+  .title ul {
     display: inline;
   }
-  .title ul li{
+  .title ul li {
     display: inline-flex;
   }
-  .menu{
+  .menu {
     float: right;
   }
-  .heading{
+  .heading {
     margin-left: 10px;
   }
-  .title h2{
+  .title h2 {
     color: var(--background-color);
-    font-family: 'Great Vibes', cursive;
+    font-family: "Great Vibes", cursive;
     font-weight: 600;
     font-size: xx-large;
   }
