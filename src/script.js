@@ -1,5 +1,4 @@
 function navDisplay() {
-  setTimeout(() => {
   if (nav.style.display == "none") {
     document.getElementById("nav").style.display = "block";
     document.getElementById("title").style.marginBottom = "0px";
@@ -11,5 +10,4 @@ function navDisplay() {
     document.getElementById("title").style.borderBottomLeftRadius = "2px";
     document.getElementById("title").style;
   }
-},150);
 }
