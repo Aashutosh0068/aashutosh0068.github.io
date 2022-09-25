@@ -16,14 +16,54 @@ body {
   font-weight: 400;
   color: var(--black-color);
 }
+.title{
+  display: none;
+}
 @media only screen and (max-width: 600px) {
+  @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
   body {
     background-color: var(--background-color);
   }
-  .nav {
+  .title{
     background-color: var(--black-color);
-    padding: 3px;
+    padding: 10px;
+    padding-top: 14px;
+    padding-bottom: 12px;
+    display: block;
+    width: auto;
+    border: solid 1px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    margin-bottom: 10px;
+  }
+  .title ul{
+    display: inline;
+  }
+  .title ul li{
+    display: inline-flex;
+  }
+  .menu{
+    float: right;
+  }
+  .heading{
+    margin-left: 10px;
+  }
+  .title h2{
+    color: var(--background-color);
+    font-family: 'Great Vibes', cursive;
+    font-weight: 600;
+    font-size: xx-large;
+  }
+  .nav {
+    display: none;
+    background-color: var(--black-color);
+    padding: 8px;
     text-align: center;
+    padding-bottom: 10px;
+    border-bottom: var(--black-color) 1px solid;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-bottom: 12px;
   }
   .nav ul li {
     padding: 12px;
