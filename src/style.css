@@ -4,7 +4,7 @@
   --post-primar-color: #0099cc;
   --secondar-color: #94b8b8;
   --black-color: #1a1a1a;
-  --replacer-color: #00f78a;
+  --replacer-color: #45a049;
   --background-color: #fbfbfb;
 }
 * {
@@ -31,9 +31,9 @@ body {
     padding-bottom: 12px;
     display: block;
     width: auto;
-    border: solid 1px;
-    border-bottom-left-radius: 6px;
-    border-bottom-right-radius: 6px;
+    border-bottom: var(--background-color) 0px solid;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
     margin-bottom: 10px;
   }
   .title ul {
@@ -44,6 +44,7 @@ body {
   }
   .menu {
     float: right;
+    cursor: pointer;
   }
   .heading {
     margin-left: 10px;
@@ -58,11 +59,14 @@ body {
     display: none;
     background-color: var(--black-color);
     padding: 8px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     text-align: center;
-    padding-bottom: 10px;
+    padding-bottom: 16px;
     border-bottom: var(--black-color) 1px solid;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
     margin-bottom: 12px;
   }
   .nav ul li {
@@ -93,4 +97,52 @@ h2 {
 .nav li a {
   text-decoration: none;
   color: var(--primary-color);
+}
+.contact_form{
+  padding: 25px;
+  padding-top: 16px;
+  padding-bottom: 13px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  color: var(--black-color);
+  font-size: medium;
+  padding-bottom: 20px;
+}
+input[type=text],input[type=tel],input[type=email],textarea{
+  width: 100%;
+  padding: 12px;   
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box;
+  margin-top: 12px; 
+  margin-bottom: 16px; 
+  resize: vertical;
+  font-size:medium;
+}
+input[type=submit]{
+  background-color:var(--replacer-color);
+  color: white;
+  padding: 15px;
+  border: 1px solid;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 300;
+  font-size: medium;
+  box-sizing: border-box;
+  width: 30%;
+  height: 48px;
+  resize: vertical;
+  margin-top: 0px;
+}
+textarea{
+  height: 30vh;
+}
+.contact_form img{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.contact_form h1{
+  color: var(--primary-color);
+  font-weight: 400;
+  font-family: 'Segoe UI', sans-serif;
 }
